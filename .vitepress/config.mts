@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base: '/usekit/',
+  base: process.env.GITHUB_ACTIONS ? '/usekit/' : '/',
   title: "UseKit",
   description: "One place for all my productivity tools. Built to help you focus, grow, and ship.",
   themeConfig: {
